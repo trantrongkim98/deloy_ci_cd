@@ -2,7 +2,7 @@ name: Demo app android release
 
 on:
   push:
-   branch: [master,dev]
+    branches: [master,dev]
 jobs:
   build:
     runs-on: macos-latest
