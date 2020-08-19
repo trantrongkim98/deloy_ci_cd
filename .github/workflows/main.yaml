@@ -17,7 +17,7 @@ jobs:
       - run: flutter pub get
       - run: flutter test
       - run: flutter build appbundle
-        name: create a Release in github
+      - name: create a Release in github
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/apk/release/*.apk,build/app/outputs/bundle/release/app-release.aab"
